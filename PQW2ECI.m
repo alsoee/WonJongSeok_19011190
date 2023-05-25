@@ -18,5 +18,4 @@ RAAN_matrix = [cos(RAAN_rad) sin(RAAN_rad) 0
 
 rotation_matrix = transpose(arg_prg_matrix * inc_angle_matrix * RAAN_matrix);
 
-f
 end
