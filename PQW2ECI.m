@@ -16,6 +16,6 @@ RAAN_matrix = [cos(RAAN_rad) sin(RAAN_rad) 0
     -sin(RAAN_rad) cos(RAAN_rad) 0
     0 0 1];
 
-rotation_matrix = inv(arg_prg_matrix * inc_angle_matrix * RAAN_matrix);
+rotation_matrix = transpose(arg_prg_matrix * inc_angle_matrix * RAAN_matrix);
 
 end
