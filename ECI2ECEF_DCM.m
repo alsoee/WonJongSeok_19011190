@@ -1,5 +1,6 @@
 function DCM = ECI2ECEF_DCM(time)
 
+time = datetime(time);
 jd = juliandate(time); % UTC -> juliandate
 GST = siderealTime(jd); % juliandate -> GST
 
