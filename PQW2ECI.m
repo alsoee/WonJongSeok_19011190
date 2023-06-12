@@ -8,9 +8,9 @@ arg_prg_matrix = [cos(arg_prg_rad) sin(arg_prg_rad) 0
     -sin(arg_prg_rad) cos(arg_prg_rad) 0
     0 0 1];
 
-inc_angle_matrix = [cos(inc_angle_rad) 0 -sin(inc_angle_rad)
-    0 1 0
-    sin(inc_angle_rad) 0 cos(inc_angle_rad)];
+inc_angle_matrix = [1 0 0
+    0 cos(inc_angle_rad) sin(inc_angle_rad)
+    0 -sin(inc_angle_rad) cos(inc_angle_rad)];
 
 RAAN_matrix = [cos(RAAN_rad) sin(RAAN_rad) 0
     -sin(RAAN_rad) cos(RAAN_rad) 0
