@@ -4,7 +4,7 @@ function el = elevation(ENU, el_mask)
 
 el = [];
 
-for num = 1:n
+for num = 1:m
     R_E = ENU(num,1);
     R_N = ENU(num,2);
     R_U = ENU(num,3);
