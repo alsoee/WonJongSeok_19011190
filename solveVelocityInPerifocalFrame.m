@@ -2,7 +2,7 @@ function velocityInPQW = solveVelocityInPerifocalFrame(semimajor_axis, eccentric
 
 % deg(input unit) -> rad(matlab unit)
 true_anomaly = true_anomaly * pi/180;
-% unit : m^3 * s^(-2)
+% unit : km^3 * s^(-2)
 mu = 3.986004418 * 10^5;
 
 semi_latus_rectum = semimajor_axis * (1 - eccentricity^2);
