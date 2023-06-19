@@ -9,6 +9,6 @@ for num = 1:m
     R_N = ENU(num,2);
     R_U = ENU(num,3);
 
-    az(num) = acosd(R_N / sqrt(R_E^2 + R_N^2));
+    az(num) = atan2(R_N, R_E) .* 180 ./ pi;
 end
 end
